@@ -17,8 +17,6 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from attc_app.views import index, membership, about, facilities, coaching, leagues, news, contact, gallery
-
 urlpatterns = [
     path('admin/', admin.site.urls),
 ]
