@@ -17,6 +17,17 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+from attc_app.views import index, membership, about, facilities, coaching, leagues, news, contact, gallery
+
 urlpatterns = [
+    path('', index, name='index'),
+    path('membership/', membership, name='membership'),
+    path('about/', about, name='about'),
+    path('coaching/', coaching, name='coaching'),
+    path('facilities/', facilities, name='facilities'),
+    path('news/', news, name='news'),
+    path('leagues/', leagues, name='leagues'),
+    path('contact/', contact, name='contact'),
+    path('gallery/', gallery, name='gallery'),
     path('admin/', admin.site.urls),
 ]
